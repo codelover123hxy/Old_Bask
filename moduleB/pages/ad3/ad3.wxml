@@ -1,0 +1,6 @@
+<!--pages/guanggao3/guanggao3.wxml-->
+<view style="text-align: center;" wx:for="{{array}}"> 
+  <image src="{{item.url}}" mode="heightFix" style="height: 450rpx;"></image>
+</view>
+
+

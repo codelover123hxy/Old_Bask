@@ -1,0 +1,10 @@
+<!--moduleD/pages/hospital/hospital.wxml-->
+<view class="content" style="height: 1200rpx;"> 
+  <view style="display: flex;font-size:xx-large;margin-top: 300rpx;"> 
+    <view bindtap="returnBack">
+      <image src="https://s2.loli.net/2022/08/01/ut2gVnHbQ5kBxFl.jpg" mode="heightFix" style="height: 60rpx;"></image>
+    </view>
+    <view bindtap="gotoSpecialistCommunity" style="margin-left: 56rpx;background-color: rgb(204,217,191);">专家社区</view>
+    <view bindtap="gotoSpecialistConsult" style="margin-left: 100rpx;background-color: rgb(204,217,191);">专家咨询</view>
+  </view>
+</view>

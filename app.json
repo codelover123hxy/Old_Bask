@@ -1,0 +1,114 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/community/community",
+    "pages/shopping/shopping",
+    "pages/personal-center/personal-center",
+    "pages/examination/examination"
+  ],
+  "subPackages": [
+    {
+      "root":"moduleA",
+      "pages":[
+        "pages/medicine-reminder/medicine-reminder",
+        "pages/voice/voice",
+        "pages/recipes/recipes",
+        "pages/introduction/introduction"
+      ]
+    },
+    {
+      "root":"moduleB",
+      "pages":[
+        "pages/ad1/ad1",
+        "pages/ad2/ad2",
+        "pages/ad3/ad3",
+        "pages/ad4/ad4"
+      ]
+    },
+    {
+      "root":"moduleC",
+      "pages":[
+        "pages/disease-situation/disease-situation",
+        "pages/liking-taboos/liking-taboos",
+        "pages/health-record/health-record"
+      ]
+    },
+    {
+      "root":"moduleD",
+      "pages":[
+        "pages/mycommunity/mycommunity",
+        "pages/hospital/hospital",
+        "pages/enter-community/enter-community",
+        "pages/specialist-community/specialist-community",
+        "pages/specialist-consult/specialist-consult",
+        "pages/consultroom/consultroom"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  
+  },
+  "preloadRule": {
+    "pages/index/index":{
+      "packages": [
+        "moduleA",
+        "moduleB"
+      ],
+      "network": "all"
+    },
+    "pages/personal-center/personal-center":{
+      "packages": [
+        "moduleC"
+      ]
+    },
+    "pages/community/community":{
+      "packages":[
+        "moduleD"
+      ]
+    }
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#2C7F39",
+    "borderStyle": "black",
+    "backgroundColor": "#ABC6A7",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/p11.jpg",
+        "selectedIconPath": "static/p1.jpg",
+        "text": "一键食谱"
+      },
+      {
+        "pagePath": "pages/shopping/shopping",
+        "iconPath": "static/p2.jpg",
+        "selectedIconPath": "static/p12.jpg",
+        "text": "一键商城"
+      },
+      {
+        "pagePath": "pages/examination/examination",
+        "iconPath": "static/p3.jpg",
+        "selectedIconPath": "static/p13.jpg",
+        "text": "一键检测"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "iconPath": "static/p4.jpg",
+        "selectedIconPath": "static/p14.jpg",
+        "text": "一键社区"
+      },
+      {
+        "pagePath": "pages/personal-center/personal-center",
+        "iconPath": "static/p5.jpg",
+        "selectedIconPath": "static/p15.jpg",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

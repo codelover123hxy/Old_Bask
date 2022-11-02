@@ -1,0 +1,25 @@
+
+<view class="framework">
+  <view class="title">
+    请选择您的偏好与忌口!
+  </view>
+  <view class="v" id="v1">
+    口味偏好：
+  </view>
+  <view class="check1">
+  <checkbox-group bindchange="checkboxChange1">
+    <checkbox class="select" id="select1" value="{{item.name}}" wx:for="{{array1}}" checked="{{item.checked}}" >{{item.name}}</checkbox>
+  </checkbox-group>
+  </view>
+  <view class="v" id="v2">
+    饮食忌口：
+  </view>
+  <view class="check2">
+    <checkbox-group bindchange="checkboxChange2">
+    <checkbox checked="{{item.checked}}" class="select" id="select2" value="{{item.name}}" wx:for="{{array2}}">{{item.name}}</checkbox>
+    </checkbox-group>
+  </view>
+  <view class="button">
+    <button type="primary" bindtap="save">保存</button>
+  </view>
+</view>

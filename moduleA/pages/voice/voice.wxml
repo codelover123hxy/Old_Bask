@@ -1,0 +1,28 @@
+<!--pages/yuyin/yuyin.wxml-->
+<view class="content">
+  <image src="https://s2.loli.net/2022/07/28/ZEkqJU4IyxKfGWt.jpg" class="img"></image>
+        <view class="topimg" style="position:relative;">
+            <image class="topbackgroud" mode="widthFix" src="https://s2.loli.net/2022/07/09/iXI7sfh62yqJrwQ.jpg">
+            </image>
+            <view bindtap="back">
+                <image src="https://s2.loli.net/2022/07/28/pqkjzLxIlovcUuw.jpg"class="back"
+                style="position:absolute;left:10rpx;bottom:10%;"></image>
+            </view>
+        </view>
+        <view class="main">
+            <view class="topbar">
+                <view class="icon1">
+                  <image src="https://s2.loli.net/2022/07/25/7jMrvmOeZkNfF25.jpg" class="imgicon"></image>
+                </view>
+                <view class="search"></view>
+            </view>
+            <view class="yijianshipu">
+                <image class="yijianshipuicon" style="display:block;margin:-150rpx auto;width: 70%;"
+                        mode="widthFix" src="https://s2.loli.net/2022/07/09/ySM8FcDhW9J7eHl.jpg"></image>
+                <image src="https://s2.loli.net/2022/07/09/aTudtJ2vnFEVBeC.jpg" style="display:block;margin:100rpx auto;" mode="widthFix"></image>  
+            </view>
+              <view style="height:60rpx;"></view>
+              <view class="belowbutton" style="display: flex;margin-top: 50rpx;">  
+            </view>
+        </view>
+</view> 

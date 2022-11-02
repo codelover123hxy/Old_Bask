@@ -1,0 +1,28 @@
+<!-- <web-view src="https://mp.weixin.qq.com/s/FE6vO78Stj8oTnWvU8jivg">
+</web-view> -->
+<view style="font-size: larger;font-weight: 700;">2022年全民营养周主场宣传活动在京启动</view>
+<view style="margin-top:30rpx;color:rgb(0, 26, 255)">转自中国营养界公众号</view>
+<view  style="text-indent: 2em;margin-top: 30rpx;">
+  <text  wx:for="{{textList}}">{{item.text1}}</text>
+</view>
+<view style="text-align: center;">
+<image mode="heightFix" style="height: 480rpx;" src="https://s2.loli.net/2022/07/27/iV5rNxs3h9OzuQb.jpg"></image>
+</view>
+<view style="text-indent: 2em;margin-top: 30rpx;">
+  <text wx:for="{{textList}}">{{item.text2}}</text>
+</view>
+<view style="text-indent: 2em;margin-top: 30rpx;">
+  <text wx:for="{{textList}}">{{item.text3}}</text>
+</view>
+<view style="text-indent: 2em;margin-top: 30rpx;">
+  <text wx:for="{{textList}}">{{item.text4}}</text>
+</view>
+<view style="text-indent: 2em;margin-top: 30rpx;">
+  <text wx:for="{{textList}}">{{item.text5}}</text>
+</view>
+<view style="text-indent: 2em;margin-top: 30rpx;">
+  <text wx:for="{{textList}}">{{item.text6}}</text>
+</view>
+<view style="text-align: center;">
+  <image mode="heightFix" style="height: 300rpx;" src="https://s2.loli.net/2022/07/27/8VlLrBnqFM7EJN3.jpg"></image>
+</view>

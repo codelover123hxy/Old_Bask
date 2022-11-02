@@ -1,0 +1,14 @@
+<!--moduleD/pages/consultRoom/consultRoom.wxml-->
+<view class="content" style="height: 1200rpx;background-color: rgb(236,237,236);">
+  <view style="height: 100rpx;background-color: white;text-align: center;font-size: x-large;padding-top: 50rpx;">
+    {{specialistName}}
+    <view bindtap="returnBack" style="margin-left: -600rpx;margin-top:-50rpx;">
+      <image src="https://s2.loli.net/2022/07/28/6ZmIXFHqpETLhWP.jpg" mode="heightFix" style="height: 60rpx;"></image>
+    </view>
+  </view>
+  <view style="text-align: center;margin-top: 50rpx;">
+    <image src="https://s2.loli.net/2022/08/01/hABl6xriVDQnCEo.jpg" mode="heightFix"
+    style="height:350rpx"></image>
+  </view>
+  <image src="/static/chat.jpg" mode="heightFix" style="height: 1000rpx;"></image>
+</view>

@@ -1,0 +1,119 @@
+
+.topbackgroud {
+	width: 100%;
+}
+.imgicon {
+	height: 70rpx;
+}
+.selectbar{
+  background-color: rgb(170,189,145);
+  height: 150rpx;
+}
+
+.agelist{
+  height:90rpx;
+  margin-top: 10rpx;
+  padding-top:25rpx;
+  font-size: x-large;
+  text-align:center;
+}
+.zhuanjiazixun {
+	background-color: #e4e6e7;
+	padding: 20rpx 0;
+	font-size: 50rpx;
+	border-top-left-radius: 20rpx;
+	border-top-right-radius: 20rpx;
+	border-bottom: 4rpx solid #bebebe;
+}
+.topbuttonselected {
+	background-color: #e69974 !important;
+}
+.communitybar {
+	background-color: #e4e6e7;
+	margin: 20rpx 20rpx;
+	padding: 60rpx 0rpx;
+	font-size: 50rpx;
+}
+.headicon {
+	height: 100rpx;
+	width: 100rpx;
+}
+.headiconpop {
+	height: 160rpx;
+	width: 160rpx;
+}
+.messageicon {
+	height: 80rpx;
+	width: 80rpx;
+}
+.phoneicon {
+	height: 80rpx;
+	width: 80rpx;
+}
+.doctorItem > view {
+	flex: 1;
+	padding: 20rpx 20rpx;
+	border-top: 1px solid #BEBEBE;
+}
+.paybutton {
+	height: 140rpx;
+	background-image: url(https://s4.ax1x.com/2022/02/16/H4uHG4.png);
+	background-position: center 0;
+	background-repeat: no-repeat;
+	background-size: 300rpx;
+}
+.communityitemimgborder {
+	padding-left: 120rpx;
+	height: 100rpx;
+
+}
+.comment {
+	margin-top: 20rpx;
+	font-size: 34rpx;
+	margin-bottom: 20rpx;
+}
+.communityitem {
+  background-color: rgb(204,217,191);
+  width: 530rpx;
+	padding: 10rpx;
+	margin-bottom: 20rpx;
+}
+.iconlike {
+	height: 60rpx;
+	background-image: url(https://s4.ax1x.com/2022/02/17/H5ShwR.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 60rpx;
+	width: 100rpx;
+}
+.iconcomment {
+	height: 60rpx;
+	background-image: url(https://s4.ax1x.com/2022/02/17/H5SIFx.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 60rpx;
+	width: 100rpx;
+}
+.iconshare {
+	height: 60rpx;
+	background-image: url(https://s4.ax1x.com/2022/02/17/H5S4T1.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 60rpx;
+	width: 100rpx;
+}   
+.content{
+  background-color: rgb(248,255,253);
+}
+.commentbox{
+  background-color: rgb(204,217,191);
+  border:solid rgb(130,155,89) 1rpx;
+  height: 400rpx;
+  width: 400rpx;
+  margin-top: -800rpx;
+  margin-left: 200rpx;
+  position: relative;
+  border-radius: 40rpx;
+  padding-top: 100rpx;
+}
+

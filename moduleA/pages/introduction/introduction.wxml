@@ -1,0 +1,22 @@
+<!--moduleA/pages/introduction/introduction.wxml-->
+<view class="content" style="background-color: rgb(246,234,215);">
+  <image class="topbackgroud" mode="widthFix" style="width:750rpx" src="https://s2.loli.net/2022/07/09/3jDT1oJa7qAmU2Q.jpg">
+  </image>
+  <view style="margin-top: -100rpx;margin-left: 20rpx;" bindtap="return">
+    <image src="https://s2.loli.net/2022/07/25/6Oj5apqwzlQ9kWS.jpg" mode="heightFix" style="height: 70rpx;"></image>
+  </view>
+  <view style="text-align: center;margin-top: -75rpx;height: 90rpx;color: rgb(246,234,215);font-size: x-large;">
+      {{name}}
+  </view>
+  <view style="text-align: center;background-color: rgb(246,234,215);">
+    <image src="{{imgurl}}" mode="heightFix" style="height: 360rpx;z-index: -1;"></image>
+    <view style="margin: 0 auto;height: 250rpx;border-radius: 20rpx;width: 600rpx;background-color:rgb(228,212,186);padding-top: 10rpx;margin-top: -100rpx;position:relative;z-index: 0;">
+    <view style="margin: 20rpx auto;font-size:{{font}};width: 500rpx;">
+      {{intro}}
+    </view>
+    </view>
+  </view>
+  <view style="margin:50rpx auto;height: 550rpx;border-radius: 20rpx;width: 600rpx;background-color: rgb(228,212,186);padding-top: 10rpx;">
+    <view style="font-size: x-large;margin-left: 20rpx;">推荐搭配</view>
+  </view>
+</view>

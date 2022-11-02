@@ -1,0 +1,113 @@
+<view class="content">
+  <scroll-view class="scroll-Y" scroll-top="{{scrollTop}}" scroll-y="true">
+    <view class="main">
+      <view class="topbar">
+        <view class="icon">
+          <image class="imgicon" mode="heightFix" style="margin-top: 80rpx;height: 60rpx;" src="https://s2.loli.net/2022/07/28/DKnXRSVd3WcGaOo.jpg">
+          </image>
+        </view>
+        <view class="search">
+          <textarea name="" id="" cols="30" rows="10" style="height:50rpx;width:650rpx;"></textarea>
+            <view style="margin-top: -305rpx;margin-left: 600rpx;">
+              <image src="https://s2.loli.net/2022/07/28/GTKRvMbznF46QV3.jpg" mode="widthFix" style="width: 60rpx;"></image>
+            </view>
+          </view>
+        </view>
+        <view>
+          <view class="quick_scene_bar" >
+            <block wx:for="{{scene}}" wx:for-item="item" wx:for-index="index" wx:key="index" >
+              <block>
+                <view data-event-opts="{{[['tap',[['nav',[index]]]]]}}" class="bar" 
+                   style="background-image: url(https://s2.loli.net/2022/07/28/zDOKn63mNFxypew.jpg);"  bindtap="__e">
+                  <view class="bar_sign"    style="font-weight: 700;color: black;font-size: larger;margin-top: -30rpx;">{{''+item.sign+''}}</view>
+                </view>
+              </block>
+            </block>
+          </view>
+        </view>
+        <view class="selectbar">
+          <view bindtap="selectPage" class="guessyoulike"
+                    bindtap="__e">猜您喜欢</view>
+            <view bindtap="selectPage" class="todayprice"
+                    bindtap="__e">今日特价</view>
+          </view>
+          <view class="secondHandItems">
+            <view class="secondHandItem">
+              <navigator url="../../pagesMarket/buy/buy?id=0">
+                <viewx vue-id="c97058c0-1" bind:__l="__l" vue-slots="{{['default']}}">
+                  <image class="secondHandImage" style="width:100%;"
+                      src="http://p1362.bvimg.com/10465/a7d5ea952a98180e.png" mode="aspectFill"></image>
+                </viewx>
+                <view><text class="goods-name">世界金奖茶</text></view>
+                <view><text class="brand-and-condition">狗牯脑</text><text
+                                class="brand-and-condition">|</text><text class="brand-and-condition">一级红茶100g</text>
+                </view>
+                <view style="margin-bottom:10rpx;"><text class="price-now">￥139</text><text
+                                class="price-before">￥150</text><text class="discount">已减￥11</text></view>
+              </navigator>
+              <navigator url="../../pagesMarket/buy/buy?id=1">
+                        <viewx vue-id="c97058c0-2" bind:__l="__l" vue-slots="{{['default']}}">
+                            <image class="secondHandImage" style="width:100%;"
+                                src="http://p1362.bvimg.com/10465/19501074f893abf8.jpg" mode="aspectFill"></image>
+                        </viewx>
+                        <view><text class="goods-name">迁西栗蘑菇干舞茸新鲜栗蘑灰树</text></view>
+                        <view><text class="brand-and-condition">干货 | 优质农特产</text></view>
+                        <view style="margin-bottom:10rpx;"><text class="price-now">￥129</text><text
+                                class="price-before">￥200</text><text class="discount">已减￥71</text></view>
+                    </navigator>
+                    <navigator url="../../pagesMarket/buy/buy?id=2">
+                        <viewx vue-id="c97058c0-3" bind:__l="__l" vue-slots="{{['default']}}">
+                            <image class="secondHandImage" style="width:100%;"
+                                src="http://p1362.bvimg.com/10465/6d92b7a5dcd30b55.jpg" mode="aspectFill"></image>
+                        </viewx>
+                        <view><text class="goods-name">九龙乡露天生长椴木黑木耳</text></view>
+                        <view><text class="brand-and-condition">农家自产</text><text
+                                class="brand-and-condition">|</text><text class="brand-and-condition">纯天然</text></view>
+                        <view style="margin-bottom:10rpx;"><text class="price-now">￥58</text><text
+                                class="price-before">￥74</text><text class="discount">已减￥16</text></view>
+                    </navigator>
+                </view>
+                <view class="secondHandItem">
+                    <viewx vue-id="c97058c0-4" bind:__l="__l" vue-slots="{{['default']}}">
+                        <image style="width:100%;height:200rpx;border-radius:20rpx;margin-bottom:10rpx;"
+                            src="http://p1362.bvimg.com/10465/515b3af70f8568ab.png"></image>
+                    </viewx>
+                    <navigator url="../../pagesMarket/buy/buy?id=3">
+                        <viewx vue-id="c97058c0-5" bind:__l="__l" vue-slots="{{['default']}}">
+                            <image class="secondHandImage" style="width:100%;"
+                                src="http://p1362.bvimg.com/10465/bf61e2929e325d5a.jpg" mode="aspectFill"></image>
+                        </viewx>
+                        <view><text class="goods-name">头一锅单县羊肉汤</text></view>
+                        <view><text class="brand-and-condition">自家羊肉熬制</text><text
+                                class="brand-and-condition">|</text><text class="brand-and-condition">火热生活</text></view>
+                        <view style="margin-bottom:10rpx;"><text class="price-now">￥139</text><text
+                                class="price-before">￥160</text><text class="discount">已减￥21</text></view>
+                    </navigator>
+                    <navigator url="../../pagesMarket/buy/buy?id=4">
+                        <viewx vue-id="c97058c0-6" bind:__l="__l" vue-slots="{{['default']}}">
+                            <image class="secondHandImage" style="width:100%;"
+                                src="http://p1362.bvimg.com/10465/a47c31ec00f915e9.jpg" mode="aspectFill"></image>
+                        </viewx>
+                        <view><text class="goods-name">五峰源高山红茶</text></view>
+                        <view><text class="brand-and-condition">现货</text><text class="brand-and-condition">|</text><text
+                                class="brand-and-condition">新鲜采摘</text></view>
+                        <view style="margin-bottom:10rpx;"><text class="price-now">￥99</text><text
+                                class="price-before">￥129</text><text class="discount">已减￥30</text></view>
+                    </navigator>
+                    <navigator url="../../pagesMarket/buy/buy?id=5">
+                        <viewx vue-id="c97058c0-7" bind:__l="__l" vue-slots="{{['default']}}">
+                            <image class="secondHandImage" style="width:100%;"
+                                src="http://p1362.bvimg.com/10465/2fdd18d415f5b95c.jpg" mode="aspectFill"></image>
+                        </viewx>
+                        <view><text class="goods-name">纯手工香油辣椒酱</text></view>
+                        <view><text class="brand-and-condition">现货</text><text class="brand-and-condition">|</text><text
+                                class="brand-and-condition">自家47天酿制</text></view>
+                        <view style="margin-bottom:10rpx;"><text class="price-now">￥49</text><text
+                                class="price-before">￥69</text><text class="discount">已减￥20</text></view>
+                    </navigator>
+                </view>
+            </view>
+        </view>
+        <view style="height:100rpx;"></view>
+    </scroll-view>
+</view>

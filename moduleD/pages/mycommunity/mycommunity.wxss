@@ -1,0 +1,133 @@
+
+.topbackgroud {
+	width: 100%;
+}
+.selectbar{
+  background-color: rgb(170,189,145);
+  height: 150rpx;
+}
+
+.postBox{
+  position: fixed;
+  z-index: 4;
+  height: 100rpx;
+  width: 750rpx;
+  margin:975rpx auto;background-color:rgb(224, 224, 224);
+}
+
+.commentinput{
+  width: 500rpx;
+  height: 75rpx;
+  margin-top: 10rpx;
+  margin-bottom:10rpx;
+  margin-left: 15rpx;
+  border-radius: 10rpx;
+  background-color: white;
+}
+
+.buttonForComment{
+  height:57rpx;
+  width:110rpx;
+  margin-left: 20rpx;
+  margin-right: -10rpx;
+  font-size:small;
+}
+.zhuanjiazixun {
+	background-color: #e4e6e7;
+	padding: 20rpx 0;
+	font-size: 50rpx;
+	border-top-left-radius: 20rpx;
+	border-top-right-radius: 20rpx;
+	border-bottom: 4rpx solid #bebebe;
+}
+.topbuttonselected {
+	background-color: #e69974 !important;
+}
+.communitybar {
+	background-color: #e4e6e7;
+	margin: 20rpx 20rpx;
+	padding: 60rpx 0rpx;
+	font-size: 50rpx;
+}
+.headicon {
+	height: 100rpx;
+	width: 100rpx;
+}
+.headiconpop {
+	height: 160rpx;
+	width: 160rpx;
+}
+.messageicon {
+	height: 80rpx;
+	width: 80rpx;
+}
+.phoneicon {
+	height: 80rpx;
+	width: 80rpx;
+}
+.paybutton {
+	height: 140rpx;
+	background-image: url(https://s4.ax1x.com/2022/02/16/H4uHG4.png);
+	background-position: center 0;
+	background-repeat: no-repeat;
+	background-size: 300rpx;
+}
+.communityitemimgborder {
+	padding-left: 120rpx;
+	height: 100rpx;
+}
+.comment {
+	margin-top: 20rpx;
+	font-size: 34rpx;
+	margin-bottom: 20rpx;
+}
+.commentbox{
+  position:fixed;
+  z-index:4;
+  width:750rpx;
+  margin-top: 980rpx;
+  background-color: #dbdbdb
+}
+.communityitem {
+  background-color: rgb(204,217,191);
+  width: 750rpx;
+	padding: 10rpx;
+	margin-bottom: 20rpx;
+}
+.iconlike {
+	height: 60rpx;
+	background-image: url(https://s4.ax1x.com/2022/02/17/H5ShwR.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 60rpx;
+	width: 100rpx;
+}
+.iconcomment {
+	height: 60rpx;
+	background-image: url(https://s4.ax1x.com/2022/02/17/H5SIFx.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 60rpx;
+	width: 100rpx;
+}
+.iconshare {
+	height: 60rpx;
+	background-image: url(https://s4.ax1x.com/2022/02/17/H5S4T1.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 60rpx;
+	width: 100rpx;
+}   
+.content{
+  background-color: rgb(248,255,253);
+}
+.submitBox{
+  background-color: rgb(233, 233, 233);
+  height: 400rpx;
+  width: 400rpx;
+  margin-top: -800rpx;
+  margin-left: 200rpx;
+  position: relative;
+  border-radius: 40rpx;
+  padding-top: 100rpx;
+}

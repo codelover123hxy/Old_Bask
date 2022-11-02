@@ -1,0 +1,85 @@
+.content{
+  background-color: rgb(246,234,215);
+  height: 100%;
+}
+
+.img{
+  z-index: 0;
+  position:absolute;
+  top:147rpx;
+  height:90%;
+  width:100%;
+}
+
+.topbackgroud {
+	width: 100%;
+}
+.imgicon {
+	height: 70rpx;
+}
+.fuyaoItem {
+	position: relative;
+	padding-top: 20rpx;
+	display: block;
+	margin: 0 auto;
+	width: 700rpx;
+  height: 240rpx;
+  margin-top: 40rpx;
+  background-color: rgb(168,200,168);
+  border-radius: 40rpx;
+	background-size: 700rpx;
+}
+.fuyaoItem > view {
+	margin-left: 40rpx;
+}
+.fuyaophoto {
+	position: absolute;
+	right: 40rpx;
+	bottom: 20%;
+	width: 200rpx;
+}
+.add {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 10rpx;
+	width: 80rpx;
+}
+.paybutton {
+	height: 140rpx;
+	background-image: url(https://s4.ax1x.com/2022/02/16/H4uHG4.png);
+	background-position: center 0;
+	background-repeat: no-repeat;
+	background-size: 300rpx;
+}
+.fuyaomingcheng {
+	color: white;
+	font-size: 34rpx;
+	background-color: rgb(168,200,168);
+		padding: 20rpx 0rpx; 
+	border-radius: 14rpx;
+}
+.placeholder-color {
+	color: white;
+	text-align: center;
+}
+.add-image {
+	background-color: #E4E6E7;
+	padding: 90rpx;
+	height: 100rpx;
+	background-image: url(https://s4.ax1x.com/2022/02/17/H4cxmR.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100rpx;
+	width: 100rpx;
+	display: block;
+	margin: 0 auto;
+}
+.scroll-Y {
+	height: 800rpx;
+}
+.back {
+	height: 60rpx;
+	width: 230rpx;
+}
+

@@ -1,0 +1,33 @@
+<!--moduleD/pages/specialistConsult/specialistConsult.wxml-->
+<view class="content" style="height: 1300rpx;background-color: rgb(236,237,236);" >
+  <view style="text-align: center;font-size: x-large;color: white;background-color: rgb(210,227,214);height: 120rpx;padding-top: 100rpx;">专家咨询</view>
+  <view style="position:relative;margin-top: -130rpx;z-index: 3;width: 100rpx;" bindtap="returnBack">
+    <image src="https://s2.loli.net/2022/08/01/ut2gVnHbQ5kBxFl.jpg" mode="heightFix"
+    style="height: 100rpx;"></image>
+  </view>
+  <view style="text-align: center;margin-top: 50rpx;">
+    <image src="https://s2.loli.net/2022/08/01/hABl6xriVDQnCEo.jpg" mode="heightFix"
+    style="height:350rpx"></image>
+  </view>
+  <block>
+    <view style="height: 160rpx;background-color: white;margin-top: 30rpx;padding-top: 40rpx;" wx:for="{{specialists}}">
+      <view style="margin-left:50rpx ">
+        <image src="{{item.imgurl}}" mode="heightFix" style="height: 100rpx;"></image>
+      </view>
+      <view style="margin-left: 200rpx;margin-top: -110rpx;">  
+        <view style="font-size: larger;">{{item.name}}</view>
+        <view style="font-size: small;">{{item.place}}</view>
+        <view style="font-size: small;">{{item.job}}</view>
+      </view>
+        <view style="margin-left:450rpx;margin-top: -110rpx; ">
+          <navigator url="{{item.url}}?id={{index}}" hover-class="none" style="width:100rpx" >
+          <image src="https://s2.loli.net/2022/08/01/zCJwb9dZHnARD4O.jpg" mode="heightFix" style="height: 100rpx;"></image>
+        </navigator>
+        </view>
+      
+      <view style="margin-left:580rpx;margin-top: -110rpx; ">
+        <image src="https://s2.loli.net/2022/08/01/RFTgj25XS9madsE.jpg" mode="heightFix" style="height: 100rpx;"></image>
+      </view>
+    </view>
+  </block>
+</view>

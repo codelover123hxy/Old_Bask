@@ -1,0 +1,23 @@
+
+<view class="framework">
+  <view class="title">
+    请输入选择您的疾病情况
+  </view>
+  <view class="v" id="v3">
+    疾病情况：
+  </view>`
+  <view class="check">
+    <checkbox-group bindchange="checkboxChange" 
+   >
+    <block wx:for="{{array}}" wx:key>
+      <checkbox  class="select"  value="{{item.name}}" checked="{{item.checked}}"  id="select3" >
+        {{item.name}}
+      </checkbox>
+    </block>
+    </checkbox-group>
+  </view>
+
+  <view class="button">
+    <button type="primary" bindtap="save" >保存</button>
+  </view>
+</view>

@@ -1,0 +1,102 @@
+<view class="content"  >
+  <scroll-view class="scroll-Y" scroll-top="{{scrollTop}}" scroll-y="true">
+    <view class="main" >
+      <view wx:if="{{flag2}}" style="margin-top: 997rpx;margin-left: 570rpx;position: fixed;z-index:5">
+        <button type="{{type}}" style="width: 120rpx;height:60rpx;font-size: small;"  bindtap="submitComment">
+        发送 
+        </button>
+      </view>
+      <view class="commentbox" wx:if="{{flag2}}">
+        <input class="commentinput" bindinput="commentInput" focus="auto" bindblur="hideCommentBox" confirm-type="send" placeholder="{{comment}}" >
+        </input>
+      </view>
+      <view class="submitBox"  style="position: fixed;z-index: 3;margin-top: 400rpx;" wx:if="{{flag}}">
+        <textarea focus="auto" cols="30" rows="10" bindinput="postInput" placeholder="{{post}}" class="postbox" style="margin-left: 50rpx;margin-top: -50rpx;height: 300rpx;border:dotted;border-color: grey;border-width: 1rpx;width:300rpx;background-color: white;border-radius: 10rpx;"></textarea>
+        <view style="display: flex;">
+          <button type="primary" style="width: 140rpx;height: 70rpx;margin-top: 40rpx;" bindtap="submitPost">{{submitType}}</button>
+          <button type="primary" style="width: 140rpx;height: 70rpx;margin-top: 40rpx;" bindtap="hidePostBox">返回</button>
+        </view>
+      </view>
+      <view class="topbar" >
+        <view class="icon">
+          <image  mode="heightFix" src="https://s2.loli.net/2022/07/28/DKnXRSVd3WcGaOo.jpg" style="margin: 0 30rpx;height: 60rpx;margin-top: 70rpx;"></image>
+        </view>
+      </view>
+      <view>
+        <view bindtap="returnBack" style="width:60rpx;height: 60rpx;position: relative;z-index: 5">
+          <image src="https://s2.loli.net/2022/07/28/6ZmIXFHqpETLhWP.jpg" mode="heightFix" style="height:50rpx;margin-left: 20rpx;margin-top: 20rpx;"></image>
+        </view>
+        <view style="position:relative;margin-top:-50rpx;z-index: 0;" >
+          <image src="https://s2.loli.net/2022/07/28/lXjAPMHJ5mUFaez.jpg" mode="widthFix" style="position:relative;width:140rpx;margin-left: 520rpx;margin-top: 0rpx;"></image>
+        </view>
+      </view>
+      <view class="mainpage" style="position: relative;z-index: 0;" >
+          <view>
+            <view class="selectbar" style="display:flex;">
+              <view style="margin:40rpx auto 0rpx auto;">
+                <button style="border-radius: 180rpx;width:80rpx;height: 80rpx;background-color: rgb(204,217,191)" bindtap="addPost">+</button>
+              </view>
+            </view>
+              <view>
+                <block wx:for="{{community}}">
+                  <view class="communityitem" style="position: relative;z-index:3 ;" 
+                   >
+                   <view style="display:inline-flex;margin-top: 10rpx;"> 
+                        <button style="margin-left: 400rpx;margin-top:20rpx;height:70rpx;width:120rpx;font-size:medium"  data-index="{{item.postId}}" bindtap="deletePost">删除</button>
+                        <button style="margin-left: 30rpx;margin-top:20rpx;height:70rpx;width:120rpx;font-size:medium" data-index="{{item.postId}}" bindtap="changePost">修改</button>
+                    </view>
+                    <view class="communityitemimgborder" style="margin-top: -70rpx;">
+                      <image src="{{item.img}}" mode="widthFix" 
+                        style="width: 140rpx;margin-left: -100rpx;"></image>
+                      <view style="font-size:40rpx;margin-top: -130rpx;margin-left: 60rpx;">
+                        <text>{{''+item.name+''}}</text>
+                        <view style="font-size:32rpx;color:rgb(130,155,89);">{{''+item.date+''}}</view>
+                      </view> 
+                    </view>
+                    <view class="comment" style="margin-top:60rpx;margin-left: 20rpx;">{{''+item.message+''}}</view>
+                      <view style="float:right;display: relative;z-index: 4;">
+                        <view style="display:inline-block;margin-right:10rpx;">{{item.postLikeNum}}</view>
+                        <view class="iconlike" style="display:inline-block;"
+                        data-index="{{item.postId}}" bindtap="like"></view>
+                        <view bindtap="comment" class="iconcomment" style="display:inline-block;"  data-index="{{item.postId}}"></view>
+                        <view class="iconshare" style="display:inline-block;" bindtap="onShareAppMessage"></view>
+                      </view>
+                      <view style="height: 50rpx;width:200rpx;margin-top: 80rpx;font-size: medium;position:relative;z-index:-2;margin-left: 240rpx;"
+                    bindtap="showComment" data-index="{{item.postId}}">{{item.commentShowTip}}</view>
+                  </view>
+                  <block wx:if="{{item.isShowComment}}"  >
+                    <view wx:for="{{item.comment}}" style="margin-top: 20rpx;font-size: small;">
+                      <view style="display:inline-flex;">
+                        <view style="margin-left:20rpx"> 
+                          <image src="{{item.commentProfile}}"  mode="heightFix"
+                          style="height:50rpx"></image>
+                        </view>
+                        <view style="margin-left: 30rpx;">
+                          {{item.commentName}}
+                        </view>
+                        <view style="margin-left: 30rpx;">
+                          {{item.commentDate}}
+                        </view>
+                      </view>
+                      <view style="margin-left: 20rpx;">
+                        {{item.commentContent}}
+                      </view>
+                      <view style="display: inline-flex;margin-left: 400rpx;margin-bottom: 0rpx;">
+                        <button class="buttonForComment" data-index="{{item.commentId}}" bindtap="deleteComment">删除</button>
+                        <button class="buttonForComment" data-index="{{item.commentId}}" bindtap="changeComment">修改</button>
+                      </view>
+                      <view style="display: none;">{{item.commentId}}</view>
+                      <view style="margin-left: 650rpx;margin-top: -30rpx;"
+                      bindtap="likeForComment" data-index="{{item.commentId}}">
+                        <image src="https://s4.ax1x.com/2022/02/17/H5ShwR.png"
+                        mode="heightFix" style="height: 30rpx"></image> {{item.commentLikeNum}}
+                      </view>
+                    </view>
+                  </block>
+                </block>
+              </view>
+          </view>
+      </view>   
+    </view>
+  </scroll-view>
+</view>

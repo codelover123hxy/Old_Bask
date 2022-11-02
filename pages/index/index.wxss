@@ -1,0 +1,110 @@
+.topbackgroud {
+	width: 100%;
+}
+.imgicon {
+  height:200rpx;
+  width: 200rpx;
+  margin-top: -9rpx;
+}
+.swiper{
+  width: 700rpx;
+  height: 400rpx;
+  margin:100rpx auto;
+}
+.swiperimg{
+  width: 700rpx;
+  height: 400rpx;
+  border-radius: 20rpx;
+}
+.recipeicon {
+  display:block;
+  width: 40%;
+  margin:-130rpx auto;
+  padding: 120rpx 0;
+}
+.belowbutton{
+  display: flex;
+  margin-top:20rpx;
+}
+.navimg1{
+  display:block;
+  width:150rpx;
+  padding:10rpx 0rpx;
+  margin:0 auto;
+}
+.navimg2{
+  display:block;
+  width:110rpx;
+  padding:22rpx 0rpx;
+  margin:0 auto;
+}
+.loginbar{
+  position: relative;
+  padding-top: 100rpx;
+  width:600rpx;
+  height: 430rpx;
+  margin:-500rpx auto;
+  background-color: rgb(248, 244, 238);
+  border-radius: 40rpx;
+}
+
+.nav{
+  font-size:40rpx;
+  text-align:center;
+  color: rgb(244,232,216);
+}
+
+.login{
+  width: 500rpx;
+  margin-top: -30rpx;
+  border-radius: 40rpx;
+}
+
+.cancelbutton{
+  width:500rpx;
+  height:80rpx;
+  margin-top: 30rpx;
+  border-radius: 10rpx;
+}
+
+.title{
+  margin-bottom: 70rpx;
+  font-size: larger;
+  text-align: center;
+}
+
+.medicine-tip {
+  width: 300rpx;
+  height:200rpx;
+  margin-left: 55rpx;
+  border-radius: 30rpx;
+  background-color:#ABC6A7 ;
+}
+.voice-helper {
+  width: 300rpx;
+  height: 200rpx;
+  margin-left: 40rpx;
+  border-radius: 30rpx;
+  background-color:#ABC6A7 ;
+}
+
+.content{
+  height: 1520rpx;
+}
+
+.attach1{
+  margin-top: 0rpx;
+  margin-left: 300rpx;
+}
+.attach2{
+  margin-left: -200rpx;
+  margin-top: -420rpx;
+}
+
+.backimg{
+  position:absolute;
+  z-index: -1;
+  top:147rpx;
+  height:91%;
+  width:100%;
+}

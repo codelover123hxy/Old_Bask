@@ -1,0 +1,41 @@
+<view class="content">
+    <view class="main">
+      <view style="height: 400rpx;background-color: rgb(210,227,214);border-radius: 20rpx;">
+        <view style="margin-top: 20rpx;">
+          <image src="https://s2.loli.net/2022/07/25/qhjOcagsCMyPDYo.jpg" mode="heightFix" style="height: 150rpx;"></image>
+            <view class="info" style="margin-top: -500rpx;" bindtap="gotoPersonalCenter">
+            <view style="margin-top: 550rpx;margin-left: 80rpx;">
+              <image src="{{tempFilePaths}}" mode="heightFix" style="height: 100rpx;border-radius: 100rpx;" ></image>
+            </view >
+              <view style="margin-left: 260rpx;margin-top: -80rpx;font-size: larger;">
+                {{nickname}}
+              </view>
+            </view>
+        </view>
+      </view>
+      <view style="background-color: rgb(248,248,248);height: 850rpx;">
+        <view style="border-radius: 50rpx;height: 600rpx;width:600rpx;background-color: white;margin:0rpx auto;">
+        <view style="padding-top: 10rpx;">
+          <block wx:for="{{list}}" >
+            <navigator url="{{item.nav}}" hover-class="none" >
+            <view style="margin-top: 100rpx;">
+            <view >
+              <view class="img" style="margin-left: 50rpx;">
+                <image src="{{item.url}}" mode="widthFix" style="width: 50rpx;"></image>
+              </view>
+            <view style="margin-left:170rpx;margin-top: -49rpx;font-size: large;">{{item.name}}</view>   
+            <view wx:if="{{item.name!='服药习惯'}}" class="img" style="margin-left: 500rpx;margin-top: -40rpx;">
+                <image src="{{item.url2}}" mode="widthFix" style="width: 25rpx;"></image>
+              </view>
+            </view> 
+            <view style="margin-left: 460rpx;margin-top: -60rpx;">
+                <switch wx:if="{{item.name==='服药习惯'}}"></switch>
+            </view>
+          </view>
+        </navigator>                          
+          </block> 
+        </view>
+        </view>
+      </view>
+    </view>
+</view>

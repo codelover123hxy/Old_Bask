@@ -1,0 +1,87 @@
+<view class="content">
+  <image src="https://s2.loli.net/2022/07/09/zic1d5ur9E4x3Y2.jpg" class="img"></image>
+    <scroll-view scroll-top="{{scrollTop}}" scroll-y="true"
+        data-event-opts="{{[['scrolltoupper',[['upper',['$event']]]],['scrolltolower',[['lower',['$event']]]],['scroll',[['scroll',['$event']]]]]}}"
+        bindscrolltoupper="__e" bindscrolltolower="__e" bindscroll="__e">
+        <view class="topimg" style="position:relative;">
+            <image class="topbackgroud" mode="widthFix"  src="https://s2.loli.net/2022/07/09/3jDT1oJa7qAmU2Q.jpg">
+            </image>
+            <view data-event-opts="{{[['tap',[['navback']]]]}}"  bindtap="__e">
+                <image src="https://s2.loli.net/2022/07/09/8qxYotPpN5nlDr9.jpg"class="back"
+                style="position:absolute;left:10rpx;bottom:10%;"></image>
+            </view>
+        </view>
+        <view class="main">
+            <view style="margin:0rpx 30rpx;position:relative;height:140rpx;">
+                <image class="add" mode="widthFix"  src="https://s2.loli.net/2022/07/09/14ZHW7GNarXnlg9.jpg" style="margin-top: -90rpx; margin-right: -10rpx;"
+                    data-event-opts="{{[['tap',[['fuyaoItemOpen']]]]}}" bindtap="__e"></image>
+            </view>
+            <view>
+                <block >
+                    <view class="fuyaoItem" wx:for="{{fuyao}}" wx:for-item="item" wx:for-index="index">
+                        <view style="font-size:50rpx;font-weight: 700;color: white;">{{item.name}}</view>
+                        <view style="font-size:40rpx;" rt>{{"服药时间："+item.time}}</view>
+                        <view style="font-size:40rpx;">{{"服药节点："+item.type}}</view>
+                        <view style="font-size:40rpx;">{{"用量："+item.yongliang}}</view>
+                        <block wx:if="{{fuyaoimg==''}}">
+                          <view data-event-opts="{{[['tap',[['chooseImg',['$event']]]]]}}" class="add-image"
+                                      bindtap="__e"   style="width: 1rpx;height: 1rpx;background-image: url(https://s2.loli.net/2022/07/09/qOYWNdhI2mnFGQv.jpg);background-color: rgb(168,200,168);margin-left:470rpx;margin-top: -200rpx;" ></view>
+                          </block>
+                         <block wx:if="{{fuyaoimg!=''}}">
+                           
+                          <image style="display:block;margin:0 auto;width:170rpx;height:100rpx;margin-top: -150rpx;margin-left: 500rpx;" mode="aspectFill"
+                          src="{{fuyaoimg}}"></image>
+                          </block>
+                    </view>
+                </block>
+            </view>
+        </view>
+        <view style="height:100rpx;"></view>
+    </scroll-view>
+    <uni-popup class="vue-ref" vue-id="26ba9890-1" type="center" animation="{{true}}" maskClick="{{true}}"
+        data-ref="popup" bind:__l="__l" vue-slots="{{['default']}}">
+        <view style="padding:40px;background-color:#f1e4cf;">
+            <scroll-view class="scroll-Y" scroll-top="{{scrollTop}}" scroll-y="true"
+                data-event-opts="{{[['scrolltoupper',[['upper',['$event']]]],['scrolltolower',[['lower',['$event']]]],['scroll',[['scroll',['$event']]]]]}}"
+                bindscrolltoupper="__e" bindscrolltolower="__e" bindscroll="__e">
+                <view>
+                    <view style="font-size:50rpx;">添加服药提醒</view>
+                    <view style="font-size:40rpx;padding:20rpx 0rpx;">服药名称：<input class="fuyaomingcheng"
+                            placeholder="什么药呢？" placeholder-class="placeholder-color" /></view>
+                    <view style="font-size:40rpx;padding:20rpx 0rpx;">服药时间：<view><label class="radio">
+                                <radio color="rgb(168,200,168)" value="r1" checked="{{fuyaoshijianxuanxiang==1}}"
+                                    data-event-opts="{{[['tap',[['choose',[1]]]]]}}" bindtap="__e"></radio>饭前
+                            </label><label class="radio">
+                                <radio color="rgb(168,200,168)" value="r2" checked="{{fuyaoshijianxuanxiang==2}}"
+                                    data-event-opts="{{[['tap',[['choose',[2]]]]]}}" bindtap="__e"></radio>饭后
+                            </label><label class="radio">
+                                <radio color="rgb(168,200,168)" value="r3" checked="{{fuyaoshijianxuanxiang==3}}"
+                                    data-event-opts="{{[['tap',[['choose',[3]]]]]}}" bindtap="__e"></radio>即服
+                            </label></view>
+                    </view><button style="background-color:rgb(168,200,168);" type="primary"
+                        data-event-opts="{{[['tap',[['DatePicker',['datetime']]]]]}}"
+                        bindtap="__e">{{datetime}}</button>
+                    <mx-date-picker vue-id="{{('26ba9890-2')+','+('26ba9890-1')}}" show="{{showPicker}}" type="{{type}}"
+                        value="{{value}}" show-tips="{{true}}" begin-text="入住" end-text="离店" show-seconds="{{true}}"
+                        data-event-opts="{{[['^confirm',[['ed']]],['^cancel',[['ed']]]]}}" bind:confirm="__e"
+                        bind:cancel="__e" bind:__l="__l"></mx-date-picker>
+                    <view style="font-size:40rpx;padding:20rpx 0rpx;">用量：<input class="fuyaomingcheng"
+                            placeholder="一次吃几片？" placeholder-class="placeholder-color" /></view>
+                      <view style="font-size:40rpx;padding:20rpx 0rpx;">照片：
+                        <block wx:if="{{fuyaoimg!=''}}">
+                              <image style="display:block;margin:0 auto;width:350rpx;height:350rpx;" mode="aspectFill"
+                                    src="{{fuyaoimg}}"></image>
+                        </block>
+                        <block wx:if="{{fuyaoimg==''}}">
+                            <view data-event-opts="{{[['tap',[['chooseImg',['$event']]]]]}}" class="add-image"
+                                    bindtap="__e"></view>
+                        </block>
+                      </view>
+                </view>
+                <view style="height:60rpx;"></view>
+                <view data-event-opts="{{[['tap',[['close',['$event']]]]]}}" class="paybutton"
+                    style="text-align:center;line-height:110rpx;font-size:44rpx;" bindtap="__e">确认</view>
+            </scroll-view>
+        </view>
+    </uni-popup>
+</view>

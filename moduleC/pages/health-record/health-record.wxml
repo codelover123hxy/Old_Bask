@@ -1,0 +1,10 @@
+<!--pages/jiankangjilu/jiankangjilu.wxml-->
+<view class="content">
+  <view class="box" id="breath">呼吸
+    <input placeholder="{{breathRate}}" bindinput="breathInput" type="text" style="border:solid rgb(200,246,200);margin:-20rpx 400rpx;width:300rpx;height: 60rpx;"/></view>
+  <view class="box" id="heartrate">心率
+    <input  placeholder="{{heartRate}}" bindinput="heartInput" type="text" style="border:solid rgb(200,246,200);margin:-20rpx 400rpx;width:300rpx;height: 60rpx;"/></view>
+  <view>
+    <button type="primary" style="width: 200rpx;margin-top: 20rpx;"  bindtap="save">保存</button>
+  </view>
+</view>

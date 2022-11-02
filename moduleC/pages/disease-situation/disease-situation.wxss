@@ -1,0 +1,51 @@
+/* pages/jibingqingkuang/jibingqingkuang.wxss */
+.title{
+  text-align: center;
+}
+button{
+  width:160rpx;
+  height:80rpx;
+}
+
+.framework{
+  background-color:rgb(235, 242, 234);
+  height: 1200rpx;
+}
+
+.title{
+  padding-top: 40rpx;
+  font-size: larger;
+}
+
+.v{
+  font-weight: 700;
+  font-size: large;
+  background-color:rgb(164,183,138);
+  border-radius: 16rpx;
+  margin-left: 20rpx;
+  margin-top:20rpx;
+  padding-left: 16rpx;
+  width:180rpx;
+}
+
+
+.button{
+  margin-top: 60rpx;
+}
+
+
+
+.select{
+  margin-top: 20rpx;
+  width:240rpx;
+  height: 40rpx;
+  margin-left: 100rpx;
+}
+
+#select2{
+  width:200rpx;
+  height:40rpx;
+  margin-left: 40rpx;
+}
+
+

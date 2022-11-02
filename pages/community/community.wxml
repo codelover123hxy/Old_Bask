@@ -1,0 +1,9 @@
+<view>
+<image src="https://s2.loli.net/2022/07/30/h8ZJHOg4zdy1bsl.jpg" mode="heightFix"style="height:1200rpx;margin-top:100rpx"></image>
+<view style="margin-top: -752rpx;margin-left: 143rpx;" bindtap="gotoCommunity">
+  <image src="https://s2.loli.net/2022/07/30/uEATtlYSoknFIJr.jpg" mode="heightFix" style="position: relative;z-index: 1;height: 158rpx;"></image>
+</view>
+<view style="margin-top:-49rpx;margin-left: 282rpx;" bindtap="gotoHospital">
+  <image src="https://s2.loli.net/2022/07/30/IigoMEvpHZlV5cA.jpg" mode="heightFix" style="position: relative;z-index:2;height: 180rpx;"></image>
+</view>
+</view>

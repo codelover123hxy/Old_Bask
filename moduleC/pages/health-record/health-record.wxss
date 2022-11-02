@@ -1,0 +1,11 @@
+/* pages/jiankangjilu/jiankangjilu.wxss */
+.box{
+  height: 100rpx;
+  border:8rpx solid rgb(250, 250, 250) ;
+  padding-left: 20rpx;
+  background-color: rgb(255, 255, 255)
+}
+.content{
+  height: 1200rpx;
+  background-color: rgb(250, 250, 250);
+}

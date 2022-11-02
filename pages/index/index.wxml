@@ -1,0 +1,44 @@
+<view class="content" >
+  <image src="https://s2.loli.net/2022/07/28/ZEkqJU4IyxKfGWt.jpg" class="backimg"></image>
+    <view class="topimg">
+      <image class="topbackgroud" mode="widthFix" src="https://s2.loli.net/2022/07/08/lB4kY6QbzFiAKMD.jpg">
+      </image>
+    </view>
+  <view class="main">
+    <swiper class="swiper" indicator-dots autoplay interval="3000" circular="true">
+      <swiper-item style="border-radius: 20rpx" bindtap="navto1">
+        <image class="swiperimg" src="https://s2.loli.net/2022/07/08/HwDTftF238miuOq.jpg"></image>
+      </swiper-item>
+      <swiper-item style="border-radius: 20rpx" bindtap="navto2">
+        <image class="swiperimg" src="https://s2.loli.net/2022/07/08/TqfPW9yAnwurGjz.jpg" ></image>
+      </swiper-item>
+      <swiper-item style="border-radius: 20rpx" bindtap="navto3">
+        <image class="swiperimg"  src="https://s2.loli.net/2022/07/08/HvTxhlPqFp8YoLW.jpg"></image>
+      </swiper-item>
+      <swiper-item style="border-radius: 20rpx" bindtap="navto4">
+        <image class="swiperimg"  src="https://s2.loli.net/2022/07/08/oQzuwlpPKgGRDaX.jpg"></image>
+      </swiper-item>
+    </swiper> 
+    <view class="recipe" bindtap="navtoRecipes">
+      <image class="recipeicon" mode="widthFix"  src="https://s2.loli.net/2022/07/08/9t6dSsrTHKNkMgV.jpg"></image>
+    </view>
+    <view style="height:60rpx;"></view>
+    <view class="belowbutton">
+      <view bindtap="navtoReminder" class="medicine-tip" >
+        <image class="navimg1" mode="widthFix" src="https://s2.loli.net/2022/07/08/y9JoSbpgshOm154.jpg"></image>
+        <view class="nav">服药提醒</view>
+      </view>
+      <view class="voice-helper" bindtap="navtoVoice" >
+        <image class="navimg2" mode="widthFix" src="https://s2.loli.net/2022/07/08/BNPLhb2CuGlUOF9.jpg"></image>
+        <view class="nav">智能语音助手</view>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{isExist}}" class="loginbar">
+    <view class="title">
+     欢迎来到OldBask小程序！
+    </view>
+    <button class="login" type="primary" bindtap="getUserProfile">微信一键登录</button>
+    <button class="cancelbutton" bindtap="cancelLogin" type="default">取消</button>
+  </view>
+</view> 

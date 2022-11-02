@@ -1,0 +1,12 @@
+<!--moduleD/pages/enterCommunity/enterCommunity.wxml-->
+<view >
+  <image bindtap="toMyCommunity"  src="https://s2.loli.net/2022/07/30/uLIQ259BYDTEpfl.jpg" mode="heightFix" style="height: 1290rpx;position: relative;z-index: 1;"></image>
+  <view style="margin-top: -1230rpx;margin-left: 300rpx;color: white;width: 200rpx;position: relative;z-index: 4;font-size: x-large;" bindtap="toMyCommunity">
+    我的社区
+  </view>
+  <view style="margin-top: -80rpx;position: relative;z-index:6;width: 140rpx;"
+  bindtap="returnBack">
+    <image src="https://s2.loli.net/2022/08/01/M2DpCjza9Pm6VGI.jpg" mode="heightFix"
+  style="height:100rpx;"></image>
+  </view>
+</view>

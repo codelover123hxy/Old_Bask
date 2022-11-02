@@ -1,0 +1,30 @@
+<!--pages/guanggao2/guanggao2.wxml-->
+<view style="font-size: large;">中国居民膳食指南2022 | 准则一 食物多样，合理搭配</view>
+<view style="margin-top:30rpx;color:rgb(0, 26, 255)">转自中国营养界公众号</view>
+<view style="text-indent: 2em;margin-top: 30rpx;">
+  <text wx:for="{{textList}}">{{item.text1}}</text>
+</view>
+<view style="text-align: center;" >
+  <image mode="heightFix" style="height: 500rpx;" src="https://s2.loli.net/2022/07/27/gRhpMPfaTcS7utC.png"></image>
+</view>
+<view style="text-indent: 2em;margin-top: 30rpx;">
+  <text wx:for="{{textList}}">{{item.text2}}</text>
+</view>
+<view style="text-indent: 2em;margin-top: 30rpx;">
+  <text wx:for="{{textList}}">{{item.text3}}</text>
+</view>
+<view style="text-align: center;" >
+  <image mode="heightFix" style="height: 500rpx;" src="https://s2.loli.net/2022/07/27/nkF13jNAqCHmpsg.jpg"></image>
+</view>
+<view style="text-indent: 2em;margin-top: 30rpx;">
+  <text wx:for="{{textList}}">{{item.text4}}</text>
+</view>
+<view style="text-indent: 2em;margin-top: 30rpx;">
+  <text wx:for="{{textList}}">{{item.text5}}</text>
+</view>
+<view style="text-indent: 2em;margin-top: 30rpx;">
+  <text wx:for="{{textList}}">{{item.text6}}</text>
+</view> 
+<view style="text-align: center;" >
+  <image mode="heightFix" style="height: 350rpx;" src="https://s2.loli.net/2022/07/27/I1PRT8vuot2rOMB.jpg"></image>
+</view>
